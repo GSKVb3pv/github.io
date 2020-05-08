@@ -114,26 +114,6 @@ body {
   display: block;
 }
 
-/* Image Slideshow*/
-.slideshow-container {
-position: relative;
-margin:0 0 0 0;
-}
-
-
-hr.new1 {
-  border: 10px solid green;
-  border-radius: 0px;
-
-}
-hr.new2 {
-  margin: 0;
-  border: 20px solid blue;
-  border-radius: 0px;
-}
-
-.a { color: #FFFFFF; } /* CSS link color */
-
 
 .cleaner {clear: both;}
 #container {
@@ -145,7 +125,54 @@ hr.new2 {
     border: solid 1px #f0f0f0;
 }
 
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ddd;
+  background-color: #f1f1f1;
+  width: 30%;
+  margin-left: 60px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 60%;
+  border-left: none;
+  height: 220px;
+  background-color: #ddd;
+}
+
 #footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #0099ff;
     border-top: 1px solid #e5e5e5;
     color: #fff;
@@ -169,68 +196,15 @@ hr.new2 {
     #footer a:hover {
         text-decoration: underline;
     }
-.page_heading {
-    border-bottom: solid 1px #dedede;
-    font-size: 30px;
-    font-weight: normal;
-    margin: 0 0 5px 0;
-    padding: 10px 0 10px 0;
-    color: #e62e00;
-}
 
 </style>
 
-<style>
-.vertical-menu {
-  width: 250px;
-  margin: auto;
-}
 
-.vertical-menu a {
-  background-color: #ffe6ff;
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-  border: 2px solid white;
-}
-
-.vertical-menu a:hover {
-  border-left: 10px solid #ff99ff;
-}
-
-.vertical-menu a.active {
-  color: white;
-}
-
-.vertical-menu1 {
-  width: 250px;
-  margin: auto;
-}
-
-.vertical-menu1 a {
-  background-color: #b3e6b3;
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-  border: 2px solid white;
-}
-
-.vertical-menu1 a:hover {
-  border-left: 10px solid #00cc66;
-}
-
-.vertical-menu1 a.active {
-  color: white;
-}
-</style>
 
 </head>
 <body bgcolor="#FFFFFF">
 <!-- Marquee -->
-<marquee direction="left" scrolldelay="200"><strong><h5><font color="red">***Corona Virus: Stay Home, Stay Safe</font>
-<font color="Purple">***Wash Hands</font></h5></strong></marquee>
+<marquee direction="left" scrolldelay="200"><strong><h5><font color="red">***COVID 19: Stay Home, Stay Safe</font></marquee>
 
 <!-- School Name -->
 <div class="header">
@@ -242,27 +216,16 @@ hr.new2 {
 <div class="topnav">
   
   <a class="active" href="index.html">Home</a> 
-   
-  <div class="subnav">
-   <button class="subnavbtn">About Us
-   <i class="fa fa-caret-down"></i></button>
+  <a href="aboutus.html">About Us</a>
 
-  <div class="subnav-content">
-    <a href="aboutus.html">School Statistics</a>
-  </div>
-  </div>
-
-  <div class="subnav">
-   <button class="subnavbtn">Admission
-  </div>
+  <a href="aboutus.html">Admission</a>
 
   <div class="subnav">
    <button class="subnavbtn">Academic
    <i class="fa fa-caret-down"></i></button>
 
   <div class="subnav-content">
-    <a href="#Principal Message">Our Academics</a>
-    <a href="#School Statistics">Section wise Enrollment</a>
+   <a href="aboutus.html">Section wise Enrollment</a>
   </div>
   </div>
 
@@ -271,25 +234,39 @@ hr.new2 {
    <i class="fa fa-caret-down"></i></button>
 
   <div class="subnav-content">
-    <a href="#About School">Online Classes</a>
+    <a href="studentcorner.html">Online Classes</a>
+    <a href="http://www.edudel.nic.in/asg_file/classwise_distribution_new.htm" target="_blank">Syllabus</a>
+    <a href="http://ncert.nic.in/textbook/textbook.htm" target="_blank">E-Books</a>
   </div>
   </div>
 
-  <a href="#home">Achievements</a> 
-  <a href="#home">Circulars</a> 
-  <a href="#home">Gallery</a>  
-  <a href="#contact">Help Desk</a>
+  <!--<a href="#home">Achievements</a>--> 
+  <a href="http://www.edudel.nic.in/mis/misadmin/DoeNewPublicCircular.htm" target="_blank">Circulars</a> 
+  <a href="gallery.html">Gallery</a>  
+  <a href="helpdesk.html">Help Desk</a>
 </div>
 </div>
+
+
 
 <h1 style="text-align: center; color: green">Online Classes</h1>
-<h4 style="text-align: center; background-color: pink"><a href="WeeklyScheduleClass12.pdf" target="_blank">Weekly Schedule(Class-12)</a></h4>
-<h3 style="text-align: center"><a class="text-" href="https://www.aspiration.ai" target="_blank" ><img src="aspiration.jpg"></a></h3>
-
-<br><br>
-<br><br>
-<br><br>
 <br>
+<div class="tab">
+  <button class="tablinks" onclick="openIT(event, 'aspiration')" id="defaultOpen">Career Launcher</button>
+  <button class="tablinks" onclick="openIT(event, 'EPD')">English and Personality Development</button>
+</div>
+
+<div id="aspiration" class="tabcontent" style="text-align: center">
+<br><img src="aspiration.jpg" ><br><br>
+<button><a class="text-" href="https://www.aspiration.ai" target="_blank" >Sign In</a></button><br>
+<button><a href="WeeklyScheduleClass12.pdf" target="_blank">Weekly Schedule for Online Classes (Class 12)</a></button>
+</div>
+
+<div id="EPD" class="tabcontent" style="text-align: center">
+  <h3>English and Personality Development</h3>
+</div>
+
+
 <!-- Footer -->
 
 <div id="footer">
@@ -300,11 +277,31 @@ hr.new2 {
     B-3, Paschim Vihar, Delhi-110063 |
     Ph. No. : 011-25252094  |
     E-mail : govtkanyab3@gmail.com  </p>
-    <p>Copyright © 2020 Sarvodaya Kanya Vidhyalya, B-3 Paschim Vihar</p>
   </span>
   </span>
 </div>
 </div>
+
+<script>
+function openIT(evt, Name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
 
 </body>
 </html> 
